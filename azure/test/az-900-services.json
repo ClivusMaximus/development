@@ -1,0 +1,388 @@
+{
+    "glossary": [
+        {
+            "term": "Cloud Models",
+            "description": "Broad categories of cloud computing environments based on ownership and access models."
+        },
+        {
+            "term": "Public Cloud",
+            "description": "Cloud infrastructure and services owned and operated by a third-party provider, offering resources over the internet to multiple customers (e.g., AWS, Azure, GCP)."
+        },
+        {
+            "term": "Private Cloud",
+            "description": "Cloud infrastructure and services exclusively used by a single organization, either hosted on-premises or by a third-party. Provides greater control and customization."
+        },
+        {
+            "term": "Hybrid Cloud",
+            "description": "A cloud model combining public and private clouds, linked by technology enabling data and applications to move between them, offering flexibility and choice."
+        },
+        {
+            "term": "Infrastructure, Platform, and Software Services",
+            "description": "Fundamental cloud service models differing in the level of control and management responsibility between user and provider."
+        },
+        {
+            "term": "IaaS (Infrastructure as a Service)",
+            "description": "Provides fundamental computing resources like virtual machines, storage, and networking. Users have maximum control over the infrastructure but are responsible for OS, middleware, applications."
+        },
+        {
+            "term": "PaaS (Platform as a Service)",
+            "description": "Provides a managed environment for developing, running, and managing applications. Includes OS, middleware, runtime, etc. Developers focus on code."
+        },
+        {
+            "term": "SaaS (Software as a Service)",
+            "description": "Fully managed, subscription-based software applications delivered over the internet (e.g., Office 365, Salesforce, Gmail)."
+        },
+        {
+            "term": "Compute",
+            "description": "The processing power and memory resources required to execute workloads in a cloud environment."
+        },
+        {
+            "term": "Azure Virtual Machines",
+            "description": "Scalable on-demand virtual machines in Azure, allowing you to choose from various operating systems and configurations."
+        },
+        {
+            "term": "Azure Virtual Machine Scale Sets",
+            "description": "Manages and automatically scales multiple identical virtual machines, providing high availability and load balancing."
+        },
+        {
+            "term": "Azure Spot Virtual Machines",
+            "description": "Utilize unused Azure compute capacity at deep discounts, ideal for interruptible workloads."
+        },
+        {
+            "term": "Azure Virtual Desktop",
+            "description": "Delivers virtual desktops and applications, enabling remote work and secure access."
+        },
+        {
+            "term": "Azure App Service",
+            "description": "Fully managed platform to build, deploy, and scale web apps, APIs, and mobile backends."
+        },
+        {
+            "term": "Azure Functions",
+            "description": "Serverless compute service for event-driven code execution, enabling small, focused functions."
+        },
+        {
+            "term": "Azure Container Instances",
+            "description": "Quickly run containers in Azure without managing VMs or higher-level services."
+        },
+        {
+            "term": "Azure Kubernetes Service (AKS)",
+            "description": "Simplifies Kubernetes cluster deployment, scaling, and management in Azure."
+        },
+        {
+            "term": "Azure Batch",
+            "description": "Manages large-scale, parallel, and high-performance computing (HPC) workloads in Azure. "
+        },
+        {
+            "term": "Databases",
+            "description": "Cloud-based storage solutions for structured and unstructured data."
+        },
+        {
+            "term": "Azure SQL Database",
+            "description": "Fully managed relational database service based on SQL Server, offering high availability and scalability."
+        },
+        {
+            "term": "Azure Cosmos DB",
+            "description": "Globally distributed, multi-model database service enabling rapid development with various data models."
+        },
+        {
+            "term": "Azure Database for MySQL servers",
+            "description": "Fully managed MySQL database service in Azure."
+        },
+        {
+            "term": "Azure Database for PostgreSQL servers",
+            "description": "Fully managed PostgreSQL database service in Azure."
+        },
+        {
+            "term": "Azure Database for MariaDB servers",
+            "description": "Fully managed MariaDB database service in Azure."
+        },
+        {
+            "term": "Azure Cache for Redis",
+            "description": "In-memory data store for high-performance and scalable applications."
+        },
+        {
+            "term": "SQL Server (on Azure Virtual Machines)",
+            "description": "Run SQL Server workloads on Azure virtual machines for complete control over the database instance."
+        },
+        {
+            "term": "Data Storage",
+            "description": "Various cloud-based options for storing different data types, each with specific use cases and characteristics."
+        },
+        {
+            "term": "Azure Blob Storage",
+            "description": "Scalable object storage for unstructured data like images, videos, and documents."
+        },
+        {
+            "term": "Azure Files",
+            "description": "Provides fully managed file shares accessible using industry-standard network protocols. "
+        },
+        {
+            "term": "Azure Queue Storage",
+            "description": "Reliable messaging service for storing and retrieving large numbers of messages."
+        },
+        {
+            "term": "Azure Table Storage",
+            "description": "NoSQL storage for storing structured, non-relational data."
+        },
+        {
+            "term": "Azure Data Lake",
+            "description": "Highly scalable and secure data repository designed for big data analytics workloads."
+        },
+        {
+            "term": "Networking",
+            "description": "Components and services that facilitate communication within and outside of a cloud environment."
+        },
+        {
+            "term": "Virtual network gateways",
+            "description": "Enables secure connectivity between virtual networks and on-premises networks or other cloud providers."
+        },
+        {
+            "term": "Nat gateways",
+            "description": "Allows resources within a private subnet to connect to the internet without exposing their private IP addresses."
+        },
+        {
+            "term": "Local network gateways",
+            "description": "Represents your on-premises network for connecting to virtual networks in Azure."
+        },
+        {
+            "term": "On-premises data gateways",
+            "description": "Acts as a bridge, securely transferring data between on-premises data sources and Azure cloud services."
+        },
+        {
+            "term": "Azure Stack Edge / Data Box Gateway",
+            "description": "Hardware appliances enabling data transfer to Azure with network acceleration and offline capabilities."
+        },
+        {
+            "term": "Analytics & Big Data",
+            "description": "Tools and services for processing, analyzing, and deriving insights from large, complex datasets."
+        },
+        {
+            "term": "Azure Synapse Analytics",
+            "description": "Cloud-based data warehouse and analytics service integrating data integration, enterprise data warehousing, and big data analytics."
+        },
+        {
+            "term": "Azure HDInsight",
+            "description": "Managed cloud service for open-source analytics frameworks like Hadoop, Spark, Kafka, and others."
+        },
+        {
+            "term": "Azure Data Lake Analytics",
+            "description": "Job-based analytics service for massively parallel data processing over large datasets."
+        },
+        {
+            "term": "Azure Databricks",
+            "description": "Collaborative Apache Spark-based analytics platform optimized for Azure."
+        },
+        {
+            "term": "Azure Data Factory",
+            "description": "Fully managed data integration service for orchestrating and automating data movement and transformation."
+        },
+        {
+            "term": "Azure Stream Analytics",
+            "description": "Real-time analytics engine for processing and analyzing high-velocity data streams."
+        },
+        {
+            "term": "Internet of Things (IoT)",
+            "description": "Services enabling the connection, management, and data analysis from large networks of internet-connected devices."
+        },
+        {
+            "term": "Azure IoT Hub",
+            "description": "Centralized message hub for bi-directional device-to-cloud and cloud-to-device communication."
+        },
+        {
+            "term": "Azure IoT Central",
+            "description": "Fully managed SaaS platform simplifying IoT solution development and management."
+        },
+        {
+            "term": "Azure Sphere",
+            "description": "A comprehensive IoT security solution from Microsoft, including specialized microcontrollers (MCUs), a custom Linux-based OS, and a cloud-based security service. It aims to provide end-to-end security for IoT devices"
+        },
+        {
+            "term": "Development Tools",
+            "description": "Software and resources used to design, build, test, and deploy applications on Azure. Includes Visual Studio Code, Azure SDKs, and Azure DevOps."
+        },
+        {
+            "term": "Azure DevOps",
+            "description": "A cloud-based suite of tools for collaboration and software development. Provides services like version control (Git), continuous integration/continuous delivery (CI/CD) pipelines, project management, and testing."
+        },
+        {
+            "term": "Azure DevTest Labs",
+            "description": "A service for quickly creating development and test environments in Azure. Allows you to provision pre-configured environments, manage costs, and enforce policies."
+        },
+        {
+            "term": "Monitoring and Management",
+            "description": "The process and tools used to oversee the health, performance, and security of Azure resources and applications."
+        },
+        {
+            "term": "Azure Monitor",
+            "description": "A centralized service for collecting, analyzing, and visualizing logs and metrics from Azure resources and applications. Provides insights into performance, usage, and potential issues."
+        },
+        {
+            "term": "Azure Advisor",
+            "description": "Provides personalized recommendations to optimize Azure deployments for cost, performance, security, reliability, and operational excellence."
+        },
+        {
+            "term": "Azure Service Health",
+            "description": "Gives you a personalized view of the health of Azure services and regions relevant to your deployments. Informs you of planned maintenance and service-impacting issues."
+        },
+        {
+            "term": "Azure Cost Management + Billing",
+            "description": "Tools for monitoring, analyzing, and optimizing Azure spending. Provides visibility into costs, helps set budgets, and generates alerts for overspending."
+        },
+        {
+            "term": "Azure Policy",
+            "description": "Enables you to enforce rules and governance across Azure subscriptions. Can be used to control resource types, locations, and configurations."
+        },
+        {
+            "term": "Azure Resource Manager templates",
+            "description": "JSON files that define the structure and configuration of Azure resources. Used to automate deployments and ensure consistency."
+        },
+        {
+            "term": "Azure Blueprints",
+            "description": "Framework for defining sets of Azure resources, policies, and deployment sequences as reusable artifacts. Helps with governance and compliance."
+        },
+        {
+            "term": "Azure Resource Locks",
+            "description": "Protects deployed resources from accidental modification or deletion. Can be applied at different levels (subscription, resource group, or individual resource)."
+        },
+        {
+            "term": "Security, Identity & Compliance",
+            "description": "The technologies and practices related to protecting Azure environments, managing user identities, and complying with regulatory standards."
+        },
+        {
+            "term": "Azure Active Directory (Azure AD)",
+            "description": "Microsoft's cloud-based identity and access management service. Provides single sign-on, multi-factor authentication, and user/group management for cloud and on-premises applications."
+        },
+        {
+            "term": "Azure Key Vault",
+            "description": "Securely stores and manages secrets like keys, certificates, and connection strings for Azure applications."
+        },
+        {
+            "term": "Azure Lighthouse",
+            "description": "Enables service providers to manage multiple Azure tenants from a single control plane, offering scalability and enhanced management."
+        },
+        {
+            "term": "Azure Security Center",
+            "description": "Centralized security management platform for Azure. Provides threat protection, vulnerability assessment, workload protection, and security posture recommendations."
+        },
+        {
+            "term": "Azure Sentinel",
+            "description": "A cloud-native SIEM (Security Information and Event Management) and SOAR (Security Orchestration, Automation, and Response) solution. Helps detect, investigate, and respond to security threats."
+        },
+        {
+            "term": "Microsoft Defender for Cloud",
+            "description": "Provides unified security management and threat protection for hybrid and multi-cloud workloads including Azure, on-premises, and other clouds."
+        },
+        {
+            "term": "Microsoft Trust Center",
+            "description": "Centralized portal for information on Microsoft's security, privacy, and compliance practices, including certifications and standards adherence."
+        },
+        {
+            "term": "Application data",
+            "description": "Information used by applications, typically stored in databases. Examples include customer data, product catalogs, and transactional records."
+        },
+        {
+            "term": "Compute resources",
+            "description": "Processing power and memory used to run applications. In Azure, common examples include virtual machines (VMs), containers, Azure Functions (serverless compute), and Azure App Service."
+        },
+        {
+            "term": "Data storage",
+            "description": "Services used to store various types of data in Azure. This includes Azure Blob Storage (objects), Azure Files (file shares), Azure Disks (block storage for VMs), and Azure Databases (e.g., SQL, Cosmos DB)."
+        },
+        {
+            "term": "Application software",
+            "description": "Software that performs specific tasks for users, ranging from productivity applications to enterprise business systems, built and deployed on Azure."
+        },
+        {
+            "term": "Scalability",
+            "description": "The ability of a system to handle increased workload by adding more resources (e.g., additional VMs, higher-tier database)."
+        },
+        {
+            "term": "Elasticity",
+            "description": "Closely related to scalability; the ability to dynamically add or remove resources based on current demand, optimizing resource usage and costs."
+        },
+        {
+            "term": "High availability",
+            "description": "A design principle that prioritizes minimizing downtime. Achievable by using redundancy, fault tolerance techniques, and load balancing."
+        },
+        {
+            "term": "Geo-distribution",
+            "description": "Deploying application components across multiple geographically dispersed regions for improved performance, availability, and disaster recovery."
+        },
+        {
+            "term": "Geo-redundant storage (GRS)",
+            "description": "An Azure Storage replication option that replicates data to a secondary region for protection against regional outages."
+        },
+        {
+            "term": "Read-only geo-redundant storage (RA-GRS)",
+            "description": "A variation of GRS offering read-access to data in the secondary region for additional scenarios."
+        },
+        {
+            "term": "Zone-redundant storage (ZRS)",
+            "description": "Replicates data synchronously across three availability zones within a single Azure region to protect against zone-level failures."
+        },
+        {
+            "term": "Locally redundant storage (LRS)",
+            "description": "The most basic Azure Storage replication option. Replicates data multiple times within a single data center in a single region."
+        },
+        {
+            "term": "Disaster recovery",
+            "description": "Measures taken to ensure the restoration of systems and data after a disaster event (e.g., natural disaster, cyberattack)"
+        },
+        {
+            "term": "Fault Tolerance",
+            "description": "The ability of a system to continue operating even when components fail. Achieved through redundancy and failover mechanisms."
+        },
+        {
+            "term": "Low latency",
+            "description": "Minimizing delays in data transmission between systems. Critical for real-time applications and interactive experiences."
+        },
+        {
+            "term": "Dynamic scalability",
+            "description": "The ability to adjust resources (e.g., compute, storage) up or down automatically based on changing workload demands."
+        },
+        {
+            "term": "Serverless",
+            "description": "A cloud computing model where the cloud provider manages infrastructure, scaling, and allocation of resources. Developers focus on code logic (e.g., Azure Functions, Logic Apps)."
+        },
+        {
+            "term": "OSI Layers",
+            "description": "The Open Systems Interconnection (OSI) model is a conceptual framework that divides networking functions into seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application."
+        },
+        {
+            "term": "Management Interfaces ",
+            "description": "Tools and interfaces used to interact with and administer Azure resources."
+        },
+        {
+            "term": "Azure Portal",
+            "description": "Web-based graphical interface for managing Azure resources. Provides a user-friendly way to create, configure, and monitor services."
+        },
+        {
+            "term": "Azure PowerShell",
+            "description": "A set of PowerShell cmdlets designed to work with and manage Azure resources. Azure PowerShell lets you perform administrative tasks from the command line, ideal for automation and scripting."
+        },
+        {
+            "term": "Azure CLI",
+            "description": "Azure's cross-platform command-line interface. Using the Azure CLI, you can execute commands across various Azure services through a terminal for managing and configuring resources."
+        },
+        {
+            "term": "Cost Optimization",
+            "description": "The practice of strategically maximizing resource usage while minimizing costs on Azure. Cost optimization involves identifying unused resources, right-sizing services, and leveraging cost-saving options like Azure Reservations."
+        },
+        {
+            "term": "Azure Reserved Virtual Machine (VM) Instances",
+            "description": "A purchasing option allowing you to reserve virtual machine capacity in Azure for one or three years. This upfront commitment leads to significant discounts compared to pay-as-you-go pricing."
+        },
+        {
+            "term": "Azure DevTest Labs",
+            "description": "A service in Azure enabling developers and testers to quickly provision development and testing environments. DevTest Labs help manage costs with features like quotas, auto-shutdown policies, and pre-built environments."
+        },
+        {
+            "term": "Azure virtual machine scale sets",
+            "description": "A service that lets you group and manage a set of identical, load-balanced Azure virtual machines. Scale sets allow you to automatically increase or decrease the number of VMs based on demand or predefined schedules."
+        },
+        {
+            "term": "Azure Reservations",
+            "description": "A way to prepay for Azure resources (such as VMs, storage, databases) for a period of one or three years. This commitment results in significant cost savings compared to pay-as-you-go pricing."
+        }
+    ]
+}

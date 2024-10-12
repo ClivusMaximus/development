@@ -1,0 +1,88 @@
+<% function calculatePercentage(correct, wrong) {
+    if (correct + wrong > 0) {
+       return (correct / (correct + wrong) * 100).toFixed(2);
+    } else {
+       return 0;  // Avoid divide by zero issues
+    }
+ } %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div>
+        <div id="divQuestion">
+            <a href="#" id="searchQuestionLink">?</a>
+            <div>(<%- currentQuestionIndex+1 %>/<%- totalQuestions %>)</div>
+            <div id="divQuestionText"><%- question.question.replace(/\n/g,'<br />') %></div>
+        </div>
+        <% if (message && message.includes('wrong')) { %>
+            <div id="divResultWrong">
+                <%= message %>
+            </div>
+        <% } %>
+        <% if (message && message.includes('correct')) { %>
+            <div id="divResultCorrect">
+                <%= message %>
+            </div>
+        <% } %>
+        <form id="frmAnswer" action="/answer" method="POST">
+            <% question.options.forEach(function(option, index) { %>
+                <label>
+                    <input type="radio" name="answer" value="<%= option %>" <%=lastAnswer===option ? 'checked' : '' %>>
+                    <a href="#" class="searchTermLink"><%= option %></a>
+                </label>
+                <% }); %>
+                    <div>
+                        <button type="submit" <%= !!lastAnswer ? 'disabled': '' %>>Submit</button>
+                    </div>
+        </form>
+        <form id="frmNavigate" action="/navigate" method="POST">
+            <div>
+                <button name="direction" value="back">Back</button>
+                <span> Correct: <%= totalCorrectAnswers %> Wrong: <%= totalWrongAnswers %> (<%= calculatePercentage(totalCorrectAnswers, totalWrongAnswers) %>%)</span>
+                <button name="direction" value="next">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('searchQuestionLink').onclick = function () {
+            const question = "<%- question.question.replace(/\n/g,' ') %>";
+            const encodedQuestion = encodeURIComponent(question);
+            const searchUrl = 'https://www.google.com/search?q=' + encodedQuestion;
+            const searchWindow = window.open(searchUrl, 'searchWindow');
+            if (!searchWindow || searchWindow.closed) {
+                searchWindow = window.open(searchUrl, 'searchWindow');
+            } else {
+                searchWindow.focus();
+            }
+            return false;
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.searchTermLink');
+            links.forEach(function(link) {
+                link.onclick = function(event) {
+                    event.preventDefault(); // Prevent the link from following the '#' href
+                    const searchFor = link.textContent || link.innerText; // Get the text of the link
+                    const encodedSearchFor = encodeURIComponent(searchFor); // Encode the search term
+                    const searchUrl = 'https://www.google.com/search?q=' + encodedSearchFor; // Create the search URL
+                    const searchWindow = window.open(searchUrl, 'searchWindow'); // Open the search in a new window
+                    if (!searchWindow || searchWindow.closed) {
+                        searchWindow = window.open(searchUrl, 'searchWindow');
+                    } else {
+                        searchWindow.focus();
+                    }
+                };
+            });
+        });
+    </script>
+</body>
+
+</html>

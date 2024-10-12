@@ -1,0 +1,10 @@
+*.jpg
+*.mp4
+.env
+**/.venv/
+**/.vscode/
+**/node_modules/
+**/obj/
+**/bin/
+**/.idea/
+**/__pycache__/
